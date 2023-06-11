@@ -74,7 +74,7 @@ VALUES('Mitshubishi', 'XPander Cross', '2023-01-06'),
 ('Kawasaki', 'H2R', '2022-07-28'),
 ('Hyundai', 'Creta', '2022-11-14');
 
--- Add some record to table owners
+-- Add some record to table owners relation to vehicles
 INSERT INTO owners (name, email, phone_number, id_vehicle) VALUES
 ('Matthieu Lengyel', 'Lengyelsonly@gmail.com', '081232939300', 1),
 ('Abraham Vorkays', 'Abrahamners@gmail.com', 081527797569, 3),
@@ -85,7 +85,7 @@ INSERT INTO owners (name, email, phone_number, id_vehicle) VALUES
 INSERT INTO company (company_name, location, country) VALUES
 ('Mercedes-benz', 'Arnulfstratte 61, 80636 Munchen', 'Germany');
 
--- Add some record to table cars
+-- Add some record to table cars relation to company
 INSERT INTO cars (car_name, car_type, date_made, id_company) VALUES
 ('A 200 Hatchback', 'Sedan', '2023-09-11', 1),
 ('E 53 4Matic Plus', 'Coupe', '2023-03-27', 1),
@@ -105,7 +105,7 @@ INSERT INTO worker (worker_name, specialist) VALUES
 ('Tiernan Callaghan', 'Extension engine part'),
 ('Tsukuyomi Fumiya', 'Internal fuel part');
 
--- Add some record to table workshops
+-- Add some record to table workshops relation to table broken_cars and worker
 INSERT INTO workshops (id_broken_car, id_worker, reason) VALUES
 (1, 4, 'Noisy Engine, Oil pump failure'),
 (2, 3, 'Swerving while breaking, Rattling from rear'),
